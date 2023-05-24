@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    background-image: url(https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: grey;
+    overflow: hidden;
+}
+.header, .container {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;  
+    font-weight: lighter;  
+    color: #043846;
+}
+.inputField {
+    padding: 15px;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+}
+
+.toDoAdded {
+    background: #d7cbbb;
+    list-style-type: none;
+    height: 100%;
+    text-align: center;
+    color: #043846;
+    font-size: 20px;
+    border-bottom: 1px solid #58738a;
+    width: 40%;
+    border-radius: 10px;
+}
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0mm;
+}
+.toDoCompleted {
+    background: #b5aca3;
+    color: #454b54;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 0.5s ease;
+}
+@media all and (max-width:800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width:500px) {
+    h1 {
+        font-size: 30px;
+    }
+    .toDoAdded {
+        width: 90%;
+    }
+  
+}
